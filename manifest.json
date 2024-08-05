@@ -1,0 +1,26 @@
+{
+    "name": "Boilerplate",
+    "description": "Boilerplate for making an ext",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "icons": {
+        "16": "./imgs/favicon.png",
+        "32": "./imgs/favicon.png",
+        "64": "./imgs/favicon.png",
+        "128": "./imgs/favicon.png"
+    },
+    "options_page": "./options.html",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.bing.com/*",
+                "https://bing.com/*"
+            ],
+            "js": ["./my_js/its-bing.js"],
+            "css": ["./my_css/bling-bing.css"]
+        }
+    ]
+}

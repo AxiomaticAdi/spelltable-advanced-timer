@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+            width: max-content;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        label:has(:checked) {
+            border: 5px solid navy;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Wow some options!
+    </h1>
+    <label>
+        <input type="radio" name="opt">
+        Some option
+    </label>
+    <label>
+        <input type="radio" name="opt">
+        Maybe another
+    </label>
+    <label>
+        <input type="radio" name="opt">
+        Perchance
+    </label>
+</body>
+
+</html>
