@@ -1,6 +1,6 @@
 {
-    "name": "Boilerplate",
-    "description": "Boilerplate for making an ext",
+    "name": "Spelltable Advanced Timer",
+    "description": "Chrome extension for advanced turn timer on Spelltable",
     "version": "0.0.1",
     "manifest_version": 3,
     "icons": {
@@ -16,8 +16,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://*.bing.com/*",
-                "https://bing.com/*"
+                "https://spelltable.wizards.com/game/*"
             ],
             "js": ["./my_js/its-bing.js"],
             "css": ["./my_css/bling-bing.css"]
